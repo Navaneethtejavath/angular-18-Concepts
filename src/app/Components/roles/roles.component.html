@@ -1,0 +1,71 @@
+
+
+<div class="row">
+   <div class="col-4">
+      <ul>
+      <li *ngFor="let item of RolesList">{{item.role}}</li>
+      </ul>
+   </div>
+</div>
+<diV class="row">
+   <div class="col-4">
+     <p> {{selectedid}}</p>
+   </div>
+</diV>
+<div class="row">
+   <div class="col-4">
+      <select [(ngModel)]="selectedid">
+         <option *ngFor="let role of RolesList" [value]="role.role">{{role.role}}</option>
+       </select>
+   </div>
+   
+</div>
+
+
+
+
+
+
+
+
+
+<!-- <p>roles works!</p>
+<div class="row">
+   <div class="col-3">
+    <p>{{firstname}}</p>
+   </div>
+   <div class="col-3">
+    <p>{{version}}</p>
+   </div>
+   <div class="col-3">
+    <p>{{CurrentDate}}</p>
+   </div>
+   <div class="col-3">
+    <p>{{digits}}</p>
+   </div>
+   <div class="col-3">
+      <p>{{selectedstat}}</p>
+     </div>
+</div>
+<div class="row">
+<input type="text" [(ngModel)]="inputValue"/> -->
+<!-- </div> --> 
+
+<!-- <div class="row">
+  <select [(ngModel)]="selectedstat">
+   <option value="Mv">Mv</option>
+   <option value="Ap">Ap</option>
+   <option value="TG">TG</option>
+  </select>
+</div>
+<div class="row">
+   <div class="col-3">
+      <button (click)="showalert()" class="btn btn-success">ahow alert</button>
+   </div>
+   <div class="col-3">
+      <button (click)="showalertmesage('static Mesage')" class="btn btn-success">ahow alert</button>
+   </div>
+   <div class="col-3">
+      <button (click)="showalertmesage('satic mesage 2')" class="btn btn-success">ahow alert</button>
+   </div>
+</div> -->
